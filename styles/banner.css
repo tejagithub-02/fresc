@@ -1,0 +1,32 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Adjust height */
+    overflow: hidden;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* keeps image full-cover */
+  }
+
+  /* Dark overlay */
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+  }
+
+  
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .banner {
+      height: 60vh;
+    }
+   
+  }
