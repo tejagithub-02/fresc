@@ -232,21 +232,16 @@
       <p>© 2025 FrescAqua. All Rights Reserved.</p>
     </div>
   </footer>
-  
-  
-  
+
   <!-- WhatsApp Script -->
   <script>
     document.getElementById("whatsappForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-  
+      e.preventDefault(); 
       let name = document.getElementById("name").value;
       let email = document.getElementById("email").value;
       let phone = document.getElementById("phone").value;
-      let message = document.getElementById("message").value;
-  
-      let whatsappNumber = "919945031014"; // ✅ Your WhatsApp number
-  
+      let message = document.getElementById("message").value; 
+      let whatsappNumber = "919945031014"; // ✅ Your WhatsApp number 
       let url = `https://wa.me/${whatsappNumber}?text=
       *Hello, I would like to know more about your products.*%0A
       👤 Name: ${name}%0A
@@ -299,9 +294,5 @@
       });
     });
   </script>
-  
-  
-  
-
 </body>
 </html>

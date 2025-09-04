@@ -72,4 +72,23 @@
     margin-bottom: 8px;
     display: block;
   }
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;   /* stack sections vertically */
+      align-items: center;      /* center each section */
+      text-align: center;       /* center text */
+      gap: 30px;                /* spacing between sections */
+    }
+  
+    .footer-logo,
+    .footer-links,
+    .footer-contact {
+      width: 100%;              /* full width for each section */
+    }
+  
+    .footer-links ul li,
+    .footer-contact ul li {
+      margin-bottom: 6px;       /* smaller spacing on mobile */
+    }
+  }
   
