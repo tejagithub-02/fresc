@@ -119,18 +119,20 @@ html {
     transition: 0.3s;
   }
   
-  /* Mobile Responsive */
   @media (max-width: 768px) {
     nav {
       display: none;
       flex-direction: column;
       position: absolute;
-      top: 90px;
-      right: 20px;
+      top: 100%; /* just below header */
+      right: 0;
+      left: 0; /* full width */
       background: linear-gradient(135deg, #0099cc, #00c9a7);
-      padding: 20px;
-      border-radius: 12px;
+      padding: 20px 0;
+      border-radius: 0 0 12px 12px; /* rounded only at bottom */
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      text-align: center; /* center links */
+      z-index: 999;
     }
   
     nav.active {
@@ -139,13 +141,15 @@ html {
   
     nav a {
       font-size: 20px;
-      margin: 10px 0;
+    
+      display: block; /* full clickable area */
     }
   
     .hamburger {
       display: flex;
     }
   }
+  
   /* Move site name right only on large screens */
 @media (min-width: 1024px) {
     .site-name {
