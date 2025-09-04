@@ -1,0 +1,160 @@
+/* Reset */
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Offset for sticky header */
+  section {
+    scroll-margin-top: 100px; /* adjust based on your header height */
+  }
+  
+  /* Active link style */
+  #nav a.active {
+    color: #ffd60a;
+  }
+  
+  #nav a.active::after {
+    width: 100%;
+    background: #ffd60a;
+  }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f5f9fa;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background: linear-gradient(135deg, #0099cc, #00c9a7); /* FrescAqua gradient */
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Site Name */
+  .site-name {
+    font-size: 34px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    line-height: 1.2;
+  }
+  
+  .site-name .tagline {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffd60a; /* golden yellow */
+    margin-top: 4px;
+    text-transform: none;
+    letter-spacing: 0.5px;
+  }
+  
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    gap: 40px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  /* Hover effect */
+  nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: #fff;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+  
+  nav a:hover {
+    color: #e6f7ff;
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+  }
+  
+  .hamburger div {
+    width: 28px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 90px;
+      right: 20px;
+      background: linear-gradient(135deg, #0099cc, #00c9a7);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+  
+    nav.active {
+      display: flex;
+    }
+  
+    nav a {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  /* Move site name right only on large screens */
+@media (min-width: 1024px) {
+    .site-name {
+      margin-left: 80px; 
+
+    }
+    nav
+    {
+        margin-right: 100px;
+    }
+  }
+  

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrescAqua</title>
+  <link rel="stylesheet" href="styles/header.css">
+ <link rel="stylesheet" href="styles/banner.css">
+ <link rel="stylesheet" href="styles/about.css">
+ <link rel="stylesheet" href="styles/product.css">
+ <link rel="stylesheet" href="styles/contact.css">
+ <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="site-name">
+          FrescAqua
+          <p class="tagline">#Quench Ur Thirst</p>
+        </div>
+        <nav id="nav">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#product">Product</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </header>
+      
+
+
+<!-- Banner Section -->
+<section class="banner" id="home">
+    <img src="images/banner-1.jpg" alt="Banner" class="banner-img">
+  </section>
+  
+  <style>
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 90vh; /* immersive */
+      overflow: hidden;
+    }
+  
+    .banner-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: zoomEffect 12s ease-in-out infinite alternate;
+      filter: brightness(1.05) contrast(1.05); /* boost colors slightly */
+    }
+  
+   
+  
+    /* Responsive */
+    @media (max-width: 768px) {
+      .banner {
+        height: 70vh;
+      }
+    }
+  </style>
+  
+  <section class="about-us" id="about">
+    <div class="about-container">
+      
+      <!-- Text Side -->
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          At <strong>FrescAqua</strong>, we believe that water is more than just hydration — 
+          it’s the foundation of a healthy life. Our mission is to provide 
+          <strong>fresh, pure, and mineral-enriched drinking water</strong> 
+          that quenches your thirst and rejuvenates your body.
+        </p>
+        <p>
+          Every drop of FrescAqua undergoes a <strong>9-stage advanced filtration process</strong>, 
+          ensuring unmatched purity and safety. Our non-carbonated, natural mineral water is carefully 
+          bottled to retain its freshness, making it the perfect choice for your family and loved ones.
+        </p>
+        <p>
+          From <strong>200 ml to 20 liters</strong>, we offer a wide range of packaging solutions 
+          to meet your daily hydration needs — whether at home, at work, or on the go.
+        </p>
+        <p class="highlight">
+          FrescAqua — <em>#Quench Ur Thirst with purity you can trust.</em>
+        </p>
+      </div>
+  
+      <!-- Image Side -->
+      <div class="about-image">
+        <img src="images/image-4.jpg" alt="Fresh Water" class="main-img" />
+  
+        <!-- Floating Water Drops -->
+        <img src="images/water-drop.png" alt="Drop" class="drop drop1" />
+        <img src="images/water-drop.png" alt="Drop" class="drop drop2" />
+        <img src="images/water-drop.png" alt="Drop" class="drop drop3" />
+        <img src="images/water-drop.png" alt="Drop" class="drop drop4" />
+        <img src="images/water-drop.png" alt="Drop" class="drop drop5" />
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="product-coming-soon" id="product">
+    <div class="product-container">
+  
+      <!-- Text Side -->
+      <div class="product-text">
+        <h2>Our Products</h2>
+        <p>
+          Something fresh is on the way! At <strong>FrescAqua</strong>, 
+          we’re working on introducing a new range of <strong>premium water solutions</strong> 
+          that will redefine purity and freshness.
+        </p>
+        <p class="coming-soon">🚰 Coming Soon...</p>
+      </div>
+  
+      <!-- Image Side -->
+      <div class="product-image">
+        <img src="images/bottle.png" alt="Product" class="product-img" />
+  
+        <!-- Floating Water Drops -->
+        <img src="images/water-drop.png" alt="Drop" class="drop drop1" />
+        <img src="images/water-drop.png" alt="Drop" class="drop drop2" />
+        <img src="images/water-drop.png" alt="Drop" class="drop drop3" />
+        <img src="images/water-drop.png" alt="Drop" class="drop drop4" />
+      </div>
+  
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+<section class="contact-us" id="contact">
+    <div class="contact-container">
+  
+      <!-- Left Info -->
+      <div class="contact-text">
+        <h2>Contact Us</h2>
+        <p>
+          Have a question or want to know more about <strong>FrescAqua</strong>?  
+          Fill out the enquiry form, and it will directly connect you to us via WhatsApp.
+        </p>
+        <ul>
+          <li>📍 #34, Ramasandra Village, Kengeri Road, Bengaluru - 560 056</li>
+          <li>📞 +91 99450 31014</li>
+          <li>✉️ lifecircle1966@gmail.com</li>
+          <li>🌐 www.lifecircle.net.in</li>
+          <li>🆔 GST: 29AALPY9204B1ZE</li>
+        </ul>
+      </div>
+  
+      <!-- Enquiry Form -->
+      <div class="contact-form">
+        <form id="whatsappForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" placeholder="Your Phone" required />
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Enquiry</button>
+        </form>
+      </div>
+  
+    </div>
+  </section>
+
+
+  <!-- Map Section -->
+<section style="padding: 50px 0; background-color: #f7f7f7;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <h2 style="font-size: 28px; font-weight: bold; color: #333;">Find Us Here</h2>
+      <p style="font-size: 16px; color: #555;">
+        #34, Ramasandra Village, Kengeri Road, Bengaluru - 560056
+      </p>
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.322199826989!2d77.4788321!3d12.9315281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU1JzUzLjUiTiA3N8KwMjgnNDQuNiJF!5e0!3m2!1sen!2sin!4v1693472400000!5m2!1sen!2sin" 
+        width="100%" 
+        height="400" 
+        style="border:0; border-radius: 12px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>FrescAqua</h2>
+        <p class="tagline">#Quench Ur Thirst</p>
+        <p>Fresh. Pure. Mineral Enriched.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>📍 #34, Ramasandra Village, Kengeri Road, Bengaluru - 560 056</li>
+          <li>📞 +91 99450 31014</li>
+          <li>✉️ lifecircle1966@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 FrescAqua. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  
+  
+  <!-- WhatsApp Script -->
+  <script>
+    document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let phone = document.getElementById("phone").value;
+      let message = document.getElementById("message").value;
+  
+      let whatsappNumber = "919945031014"; // ✅ Your WhatsApp number
+  
+      let url = `https://wa.me/${whatsappNumber}?text=
+      *Enquiry from FrescAqua Website*%0A
+      👤 Name: ${name}%0A
+      📧 Email: ${email}%0A
+      📞 Phone: ${phone}%0A
+      💬 Message: ${message}`;
+  
+      window.open(url, "_blank").focus();
+    });
+  </script>
+  
+  
+
+  <script>
+    // Hamburger toggle
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.getElementById("nav");
+  
+    hamburger.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  
+    // ScrollSpy
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("#nav a");
+  
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 140; // offset for header
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+  
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+  
+  
+
+</body>
+</html>

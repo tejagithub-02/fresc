@@ -1,0 +1,106 @@
+.about-us {
+    padding: 80px 60px;
+    background: linear-gradient(to bottom, #f0fafa, #ffffff);
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .about-text {
+    flex: 1 1 50%;
+  }
+  
+  .about-text h2 {
+    font-size: 38px;
+    color: #0099cc;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .about-text h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #00bcd4;
+    margin-top: 8px;
+    border-radius: 2px;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #333;
+  }
+  
+  .about-text .highlight {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00aabb;
+    margin-top: 25px;
+    padding: 12px 18px;
+    background: #e6f9ff;
+    border-left: 5px solid #00bcd4;
+    border-radius: 6px;
+  }
+  
+  .about-image {
+    position: relative;
+    flex: 1 1 40%;
+    text-align: center;
+  }
+  
+  .about-image .main-img {
+    width: 100%;
+    max-height: 420px; /* ↓ Decreased height */
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Floating drops */
+  .drop {
+    position: absolute;
+    width: 45px;
+    animation: float 6s ease-in-out infinite;
+    opacity: 0.9;
+  }
+  
+  .drop1 { top: -20px; left: 15%; animation-delay: 0s; }
+  .drop2 { bottom: -30px; right: 18%; animation-delay: 2s; }
+  .drop3 { top: 35%; right: -40px; animation-delay: 4s; }
+  .drop4 { top: 10%; right: 10%; animation-delay: 3s; }
+  .drop5 { bottom: 10%; left: -35px; animation-delay: 5s; }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); opacity: 0.9; }
+    50% { transform: translateY(-25px); opacity: 1; }
+    100% { transform: translateY(0px); opacity: 0.9; }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about-text, .about-image {
+      flex: 1 1 100%;
+    }
+    .about-image .main-img {
+      max-height: none;   /* allow full image height */
+      width: 95%;         /* bigger image */
+      margin: 0 auto;
+    }
+    .drop {
+      width: 35px;
+      opacity: 0.7;
+    }
+  }
+  
