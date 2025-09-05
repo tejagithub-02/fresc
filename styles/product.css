@@ -35,9 +35,11 @@
 
 .product-text p {
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 1.9;
   margin-bottom: 18px;
   color: #333;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .product-text .coming-soon {
@@ -51,7 +53,9 @@
   border-radius: 6px;
   display: inline-block;
 }
-
+.product-text strong {
+  color: #0099cc;
+}
 .product-image {
   position: relative;
   flex: 1 1 40%;
@@ -98,6 +102,12 @@
     max-height: none;
     width: 90%;
     margin: 0 auto;
+  }
+
+  .product-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: left;   /* easier to read on mobile */
   }
   .drop {
     width: 35px;

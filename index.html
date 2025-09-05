@@ -15,55 +15,57 @@
 
     <!-- Header -->
     <header>
+      <a href="#home" class="site-name-link">
         <div class="site-name">
           FrescAqua
           <p class="tagline">#Quench Ur Thirst</p>
         </div>
-        <nav id="nav">
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#product">Product</a>
-          <a href="#contact">Contact Us</a>
-        </nav>
-        <div class="hamburger" id="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </header>
+      </a>
+    
+      <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#product">Product</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+    
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+    
       
 
-
-<!-- Banner Section -->
-<section class="banner" id="home">
-    <img src="images/banner-1.jpg" alt="Banner" class="banner-img">
-  </section>
-  
-  <style>
-    .banner {
-      position: relative;
-      width: 100%;
-      height: 90vh; /* immersive */
-      overflow: hidden;
-    }
-  
-    .banner-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      animation: zoomEffect 12s ease-in-out infinite alternate;
-      filter: brightness(1.05) contrast(1.05); /* boost colors slightly */
-    }
-  
-   
-  
-    /* Responsive */
-    @media (max-width: 768px) {
+    <section class="banner" id="home">
+      <img src="images/banner-3.jpg" alt="Banner" class="banner-img">
+    </section>
+    
+    <style>
       .banner {
-        height: 70vh;
+        position: relative;
+        width: 100%;
+        height: 90vh;
+        overflow: hidden;
       }
-    }
-  </style>
+    
+      .banner-img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill; /* stretches both width & height */
+        filter: brightness(1.0) contrast(1.0);
+      }
+    
+      @media (max-width: 768px) {
+        .banner {
+          height: 70vh;
+        }
+      }
+    </style>
+    
+    
+    
   
   <section class="about-us" id="about">
     <div class="about-container">
@@ -86,6 +88,15 @@
           From <strong>200 ml to 20 liters</strong>, we offer a wide range of packaging solutions 
           to meet your daily hydration needs — whether at home, at work, or on the go.
         </p>
+        <p>
+          <strong>Sustainability Matters:</strong> We are committed to reducing plastic waste through our eco-friendly packaging initiatives and by promoting water refill stations across communities.
+        </p>
+        <p>
+          <strong>Community First:</strong> FrescAqua actively supports local communities by funding water conservation projects and health awareness programs, ensuring clean water reaches those who need it the most.
+        </p>
+        <p>
+          <strong>Certified Quality:</strong> All our products are ISO-certified, regularly tested, and meet international drinking water standards, giving you complete peace of mind.
+        </p>
         <p class="highlight">
           FrescAqua — <em>#Quench Ur Thirst with purity you can trust.</em>
         </p>
@@ -105,6 +116,7 @@
     </div>
   </section>
   
+  
 
   <section class="product-coming-soon" id="product">
     <div class="product-container">
@@ -116,6 +128,17 @@
           Something fresh is on the way! At <strong>FrescAqua</strong>, 
           we’re working on introducing a new range of <strong>premium water solutions</strong> 
           that will redefine purity and freshness.
+        </p>
+        <p>
+          Our upcoming collection will feature <strong>eco-friendly packaged drinking water</strong>, 
+          designed for both personal use and large-scale hydration needs. From <strong>compact bottles 
+          for travel</strong> to <strong>bulk solutions for homes, offices, and events</strong>, 
+          we aim to make safe drinking water available anytime, anywhere.
+        </p>
+        <p>
+          With <strong>advanced mineral balance</strong> and <strong>sustainable packaging</strong>, 
+          FrescAqua products are created to deliver more than just hydration — they’re built to 
+          support a <em>healthier lifestyle and a cleaner planet</em>.
         </p>
         <p class="coming-soon">🚰 Coming Soon...</p>
       </div>
@@ -133,6 +156,7 @@
   
     </div>
   </section>
+  
 
 
   <!-- Contact Section -->
